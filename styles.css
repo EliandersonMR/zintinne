@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header {
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: "Playfair Display", serif;
+}
+
+.container-main {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.control-crud {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: space-between;
+  padding: 0.5rem;
+  gap: 20px;
+  width: 100%;
+  color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+i {
+  font-size: 17px;
+}
+
+.post-btn,
+.get-btn,
+.delete-btn,
+.put-btn {
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.5s;
+}
+
+.post-btn:hover,
+.get-btn:hover,
+.delete-btn:hover,
+.put-btn:hover {
+  border-radius: 20px;
+
+}
+
+.section-form{
+    gap: 30px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      border-bottom: 1px solid black;
+        padding-bottom: 1rem;
+}
+.post-btn {
+  background-color: rgb(41, 128, 41);
+}
+
+
+.get-btn {
+  background-color: rgb(35, 35, 167);
+}
+
+.delete-btn {
+  background-color: rgb(145, 38, 38);
+}
+
+.put-btn {
+  background-color: rgb(150, 150, 34);
+}
+
+.form-crud{
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.btn-envia{
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  font-size: 17px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgb(66, 185, 66);
+}
+.container-btn {
+  display: flex;
+  align-items: center;
+  gap: 40%;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+
+.btn-envia {
+  padding: 15px 30px;
+  font-size: 16px;
+  margin: 0;
+  
+}
+
+.span-sucesso {
+  font-size: 18px;
+  line-height: 1;
+
+  color: green;
+
+
+
+}
+h2 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  margin: 10px auto 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+
+}
+
+input{
+  outline: 0;
+  font-size: 15px;
+  width: 100%;
+  padding: 1rem auto;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.bi-x-lg{
+  position: absolute;
+  right: 5px;
+  font-size: 18px;
+  color: red;
+  top: 25px;
+}
+
+
+textarea{
+  width: 100%;
+  height: 200px;
+   resize: none;
+    background-color: #ffffff;
+    
+      /* Fundo branco */
+      border: 1px solid #ddd;
+      /* Borda sutil */
+      border-radius: 10px;
+      /* Borda arredondada */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* Sombra sutil */
+      outline: none;
+      padding: 0.5rem;
+      /* Remove o contorno padrão */
+      transition: all 0.3s ease;
+      /* Transição suave para os estilos */
+}
+
+textarea:focus {
+  border-color: #007bff;
+  /* Borda azul no foco */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  /* Sombra destacada */
+  background-color: #f0f8ff;
+  /* Fundo leve no foco */
+  outline: none;
+}
+
+.descrição{
+  text-align: justify;
+  margin: 10px auto;
+}
+
+.descrição span{
+  font-size: 18px;
+
+}
+
+.idproduto{
+  top: 20px;
+  right: 10px;
+  position: absolute;
+  font-size: 18px;
+  color: blue;
+
+}
+
+.price{
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.container-card{
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      width: 100%;
+      color: black;
+
+}
+
+.card-produtos{
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 1rem;
+    border-radius: 5px;
+    position: relative;
+
+  
+}
+
+section{
+  margin-bottom: 20px;
+ 
+}
+
+     textarea::placeholder {
+       color: #aaa;
+
+       font-style: italic;
+ 
+     }
+
+textarea:hover {
+  border-color: #ccc;
+  /* Bordas mais destacadas ao passar o mouse */
+}
+
+/* Garante que o :focus tenha prioridade sobre o :hover */
+textarea:hover:focus {
+  border-color: #007bff;
+  /* Azul do foco mantém prioridade */
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  /* Sombra do foco */
+  background-color: #f0f8ff;
+  /* Fundo do foco */
+}
